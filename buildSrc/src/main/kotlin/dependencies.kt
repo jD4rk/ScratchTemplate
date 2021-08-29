@@ -116,36 +116,72 @@ object Compose {
     private const val navComposeVersion = "2.4.0-alpha07"
     private const val composeActivityVersion = "1.3.1"
     private const val composeConstraintLayoutVersion = "1.0.0-beta02"
-    const val composeRuntime = "androidx.compose.runtime:runtime:${composeVersion}"
-    const val composeLiveData = "androidx.compose.runtime:runtime-livedata:${composeVersion}"
+    const val runtime = "androidx.compose.runtime:runtime:${composeVersion}"
+    const val liveData = "androidx.compose.runtime:runtime-livedata:${composeVersion}"
+
     // Integration with activities
     const val composeActivity = "androidx.activity:activity-compose:$composeActivityVersion"
+
     // Compose Material Design
-    const val composeMaterial = "androidx.compose.material:material:$composeVersion"
-    const val composeMaterialIcon = "androidx.compose.material:material-icons-core:$composeVersion"
-    const val composeMaterialIconExt = "androidx.compose.material:material-icons-extended:$composeVersion"
+    const val material = "androidx.compose.material:material:$composeVersion"
+    const val materialIcon = "androidx.compose.material:material-icons-core:$composeVersion"
+    const val materialIconExt = "androidx.compose.material:material-icons-extended:$composeVersion"
+
     // Animations
-    const val composeAnimation =  "androidx.compose.animation:animation:$composeVersion"
+    const val animation = "androidx.compose.animation:animation:$composeVersion"
+
     // Tooling support (Previews, etc.)
-    const val ComposeUi = "androidx.compose.ui:ui:${composeVersion}"
-    const val composeUiTooling =  "androidx.compose.ui:ui-tooling:$composeVersion"
+    const val ui = "androidx.compose.ui:ui:${composeVersion}"
+    const val uiTooling = "androidx.compose.ui:ui-tooling:$composeVersion"
+
     // Navigation
-    const val navigationCompose = "androidx.navigation:navigation-compose:$navComposeVersion"
+    const val navigation = "androidx.navigation:navigation-compose:$navComposeVersion"
+
     // Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
-    const val composeFoundation = "androidx.compose.foundation:foundation:${composeVersion}"
-    const val composeCompiler = "androidx.compose.compiler:compiler:${composeVersion}"
-    const val ComposeConstraintLayout = "androidx.constraintlayout:constraintlayout-compose:${composeConstraintLayoutVersion}"
+    const val foundation = "androidx.compose.foundation:foundation:${composeVersion}"
+    const val compiler = "androidx.compose.compiler:compiler:${composeVersion}"
+    const val constraintLayout =
+        "androidx.constraintlayout:constraintlayout-compose:${composeConstraintLayoutVersion}"
+
     // Integration with ViewModels
-    const val composeLifecycleVM = "androidx.lifecycle:lifecycle-viewmodel-compose:$composeVersion"
+    const val lifecycleVM = "androidx.lifecycle:lifecycle-viewmodel-compose:$composeVersion"
+
     // UI Tests
-    const val composeTestjUnit = "androidx.compose.ui:ui-test-junit4:$composeVersion"
+    const val testjUnit = "androidx.compose.ui:ui-test-junit4:$composeVersion"
 
     // TheWhen using a MDC theme
-    const val composeThemeFromMDC = "com.google.android.material:compose-theme-adapter:$composeVersion"
-    // When using a AppCompat theme
-    const val composeThemeFromAppCompat = "com.google.accompanist:accompanist-appcompat-theme:0.16.0"
+    const val themeFromMDC = "com.google.android.material:compose-theme-adapter:$composeVersion"
+
+    // When using a AppCompat theme (
+    const val themeFromAppCompat = "com.google.accompanist:accompanist-appcompat-theme:0.16.0"
+
+    object Accompanist {
+        private const val AccompanistVersion = "0.17.0"
+        const val systemUiController =
+            "com.google.accompanist:accompanist-systemuicontroller:$AccompanistVersion"
+        const val appCompatTheme =
+            "com.google.accompanist:accompanist-appcompat-theme:$AccompanistVersion"
+        const val pager = "com.google.accompanist:accompanist-pager:$AccompanistVersion"
+        const val pagerIndicator =
+            "com.google.accompanist:accompanist-pager-indicators:$AccompanistVersion"
+        const val swipeRefresh =
+            "com.google.accompanist:accompanist-swiperefresh:$AccompanistVersion"
+        const val placeholder = "com.google.accompanist:accompanist-placeholder:$AccompanistVersion"
+        const val placeholderMaterial =
+            "com.google.accompanist:accompanist-placeholder-material:$AccompanistVersion"
+        const val drawablePainter =
+            "com.google.accompanist:accompanist-drawablepainter:$AccompanistVersion"
+        const val flowLayout = "com.google.accompanist:accompanist-flowlayout:$AccompanistVersion"
+        const val permission = "com.google.accompanist:accompanist-permissions:$AccompanistVersion"
+        const val navigationAnimation =
+            "com.google.accompanist:accompanist-navigation-animation:$AccompanistVersion"
+        const val navigationMaterial =
+            "com.google.accompanist:accompanist-navigation-material:$AccompanistVersion"
+
+    }
 
 }
+
 
 @SuppressWarnings("unused")
 object Google {
