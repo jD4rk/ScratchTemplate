@@ -1,16 +1,16 @@
 plugins {
-    id(Plugins.Android.application)
-    kotlin(Plugins.Kotlin.android)
+    id(PLUGINS.Android.application)
+    kotlin(PLUGINS.Kotlin.android)
 }
 
 android {
-    compileSdk = Project.compileSdk
+    compileSdk = PROJECT.compileSdk
     defaultConfig {
-        applicationId = Project.appId
-        minSdk = Project.minSdk
-        targetSdk = Project.targetSdk
-        versionCode = Project.versionCode
-        versionName = Project.versionName
+        applicationId = PROJECT.appId
+        minSdk = PROJECT.minSdk
+        targetSdk = PROJECT.targetSdk
+        versionCode = PROJECT.versionCode
+        versionName = PROJECT.versionName
     }
     buildTypes {
         getByName("release") {
@@ -36,26 +36,18 @@ android {
 }
 
 dependencies {
-    implementation(AndroidX.appCompat)
-    implementation(Google.material)
-    implementation(AndroidX.constrainLayout)
-    implementation(AndroidX.coreKtx)
 
-    // Old Navigation dependencies (no Compose)
-    implementation(Navigation.fragment)
-    implementation(Navigation.ui)
-
-    testImplementation(Test.junit)
-
-    androidTestImplementation(Test.espressoCore)
-    androidTestImplementation(Test.junitExt)
-}
-//dependencies {
+    // This is deps from "refreshVersion"
+    implementation(AndroidX.constraintLayout)
+    implementation(ANDROIDX.appCompat)
+    implementation(COMPOSE.themeFromAppCompat)
+    implementation(COMPOSE.themeFromMDC)
+    implementation(COMPOSE.Accompanist.permission)
+    // This is deps from "dependencies.kt" inside buildSrc
+//    implementation (AndroidX.room.runtime)
+//    implementation (AndroidX.room.compiler)
 //
-//    implementation 'androidx.core:core-ktx:1.6.0'
-//    implementation 'androidx.appcompat:appcompat:1.3.1'
-//    implementation 'com.google.android.material:material:1.4.0'
-//    testImplementation 'junit:junit:4.+'
-//    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-//}
+//    // Testing
+//    implementation (AndroidX.room.testing)
+
+}

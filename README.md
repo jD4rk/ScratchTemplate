@@ -3,5 +3,7 @@
 
 **Skeleton with almost all the last android library already added**
 
-- user of buildSrc with a single file for all the library version
-- Compose Ready!
+This branch use "refreshVersions" gradle plugin that provides
+easier way to manage all the dependencies
+
+"buildSrc" still contains _dependencies.kt_ and you can still use both
