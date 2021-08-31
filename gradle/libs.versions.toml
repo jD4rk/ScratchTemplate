@@ -1,0 +1,152 @@
+[versions]
+
+byRefreshVersion = "_"
+
+
+[libraries]
+
+buildscript-android = { module = "com.android.tools.build:gradle", version.ref = "byRefreshVersion" }
+buildscript-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "byRefreshVersion" }
+buildscript-navigation = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "byRefreshVersion" }
+buildscript-sqlDelight = { module = "com.squareup.sqldelight:gradle-plugin", version.ref = "byRefreshVersion" }
+
+#plugins-android-application = "com.android.application"
+#plugins-android-library = "com.android.library"
+#plugins-androidx-navigation = "androidx.navigation.safeargs"
+#plugins-androidx-navigation-ktx = "androidx.navigation.safeargs.kotlin"
+#plugins-kotlin-android = "android"
+#plugins-kotlin-multiplatform = "multiplatform"
+#plugins-kotlin-ccocoapods = "native.cocoapods"
+#plugins-kotlin-serialization = "plugin.serialization"
+#plugins-kotlin-kapt = "kotlin-kapt"
+#plugins-sqldelight = "com.squareup.sqldelight"
+
+
+androidx-appCompat = { module = "androidx.appcompat:appcompat", version.ref = "byRefreshVersion" }
+androidx-constrainLayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "byRefreshVersion" }
+androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "byRefreshVersion" }
+androidx-material = { module = "com.google.android.material:material", version.ref = "byRefreshVersion" }
+
+
+# COMPOSE
+compose-activity = { module = "androidx.activity:activity-compose", version.ref = "byRefreshVersion" }
+
+compose-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "byRefreshVersion" }
+compose-runtime-Livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "byRefreshVersion" }
+
+compose-material = { module = "androidx.compose.material:material", version.ref = "byRefreshVersion" }
+compose-material-Icon = { module = "androidx.compose.material:material-icons-core", version.ref = "byRefreshVersion" }
+compose-material-IconExt = { module = "androidx.compose.material:material-icons-extended", version.ref = "byRefreshVersion" }
+
+compose-animation = { module = "androidx.compose.animation:animation", version.ref = "byRefreshVersion" }
+
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "byRefreshVersion" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "byRefreshVersion" }
+#compose-ui-testjUnit = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "byRefreshVersion" }
+
+compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "byRefreshVersion" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "byRefreshVersion" }
+compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "byRefreshVersion" }
+compose-constraintLayout = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "byRefreshVersion" }
+
+
+# COROUTINES
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "byRefreshVersion" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "byRefreshVersion" }
+kolinnx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "byRefreshVersion" }
+
+
+kapt-filecycle = { module = "androidx.lifecycle:lifecycle-compiler", version.ref = "byRefreshVersion" }
+lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime" }
+lifecycle-runtime-testing = { module = "androidx.lifecycle:lifecycle-runtime-testing" }
+lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel" }
+lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata" }
+lifecycle-livedata-core = { module = "androidx.lifecycle:lifecycle-livedata-core" }
+lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "byRefreshVersion" }
+lifecycle-viewmodelsavedstate = { module = "androidx.lifecycle:lifecycle-viewmodel-savedstate", version.ref = "byRefreshVersion" }
+
+ktx-core = { module = "androidx.core:core-ktx", version.ref = "byRefreshVersion" }
+ktx-activity = { module = "androidx.activity:activity-ktx", version.ref = "byRefreshVersion" }
+ktx-fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "byRefreshVersion" }
+ktx-lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "byRefreshVersion" }
+ktx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "byRefreshVersion" }
+ktx-lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "byRefreshVersion" }
+ktx-lifecycle-livedata-core = { module = "androidx.lifecycle:lifecycle-livedata-core-ktx", version.ref = "byRefreshVersion" }
+ktx-navigation-runtime = { module = "androidx.navigation:navigation-runtime-ktx", version.ref = "byRefreshVersion" }
+ktx-navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "byRefreshVersion" }
+ktx-navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "byRefreshVersion" }
+ktx-room-core = { module = "androidx.room:room-ktx", version.ref = "byRefreshVersion" }
+ktx-test-core = { module = "androidx.test:core-ktx", version.ref = "byRefreshVersion" }
+
+
+#db-room-core-ktx = { module =  "androidx.room:room-ktx", version.ref = "byRefreshVersion" }
+db-room-runtime = { module = "androidx.room:room-runtime", version.ref = "byRefreshVersion" }
+kapt-room = { module = "androidx.room:room-compiler", version.ref = "byRefreshVersion" }
+db-room-testing = { module = "androidx.room:room-testing", version.ref = "byRefreshVersion" }
+
+db-sqldelight-runtime = { module = "com.squareup.sqldelight:runtime", version.ref = "byRefreshVersion" }
+db-sqldelight-androidDriver = { module = "com.squareup.sqldelight:android-driver", version.ref = "byRefreshVersion" }
+db-sqldelight-nativeDriver = { module = "com.squareup.sqldelight:native-driver", version.ref = "byRefreshVersion" }
+
+
+
+network-retrofit-core = { module = "com.squareup.retrofit2:retrofit", version.ref = "byRefreshVersion" }
+network-retrofito-moshiConverter = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "byRefreshVersion" }
+network-ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "byRefreshVersion" }
+network-ktor-clientSerialization = { module = "io.ktor:ktor-client-serialization", version.ref = "byRefreshVersion" }
+network-ktor-android = { module = "io.ktor:ktor-client-android", version.ref = "byRefreshVersion" }
+network-ktor-ios = { module = "io.ktor:ktor-client-ios", version.ref = "byRefreshVersion" }
+
+
+
+google-accompanist-systemUiController = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "byRefreshVersion" }
+google-accompanist-appCompatTheme = { module = "com.google.accompanist:accompanist-appcompat-theme", version.ref = "byRefreshVersion" }
+google-accompanist-pager = { module = "com.google.accompanist:accompanist-pager", version.ref = "byRefreshVersion" }
+google-accompanist-pagerIndicator = { module = "com.google.accompanist:accompanist-pager-indicators", version.ref = "byRefreshVersion" }
+google-accompanist-swipeRefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "byRefreshVersion" }
+google-accompanist-placeholder = { module = "com.google.accompanist:accompanist-placeholder", version.ref = "byRefreshVersion" }
+google-accompanist-placeholderMaterial = { module = "com.google.accompanist:accompanist-placeholder-material", version.ref = "byRefreshVersion" }
+google-accompanist-drawablePainter = { module = "com.google.accompanist:accompanist-drawablepainter", version.ref = "byRefreshVersion" }
+google-accompanist-flowLayout = { module = "com.google.accompanist:accompanist-flowlayout", version.ref = "byRefreshVersion" }
+google-accompanist-permission = { module = "com.google.accompanist:accompanist-permissions", version.ref = "byRefreshVersion" }
+google-accompanist-navigationAnimation = { module = "com.google.accompanist:accompanist-navigation-animation", version.ref = "byRefreshVersion" }
+google-accompanist-navigationMaterial = { module = "com.google.accompanist:accompanist-navigation-material", version.ref = "byRefreshVersion" }
+
+
+theme-fromappcompat = { module = "com.google.accompanist:accompanist-appcompat-theme", version.ref = "byRefreshVersion" }
+theme-fromMDC = { module = "com.google.android.material:compose-theme-adapter", version.ref = "byRefreshVersion" }
+
+
+androidx-navigation-runtime = { module = "androidx.navigation:navigation-runtime", version.ref = "byRefreshVersion" }
+androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment", version.ref = "byRefreshVersion" }
+androidx-navigation-ui = { module = "androidx.navigation:navigation-ui", version.ref = "byRefreshVersion" }
+#androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx:$nav_version", version.ref = "byRefreshVersion" }
+#androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx:$nav_version", version.ref = "byRefreshVersion" }
+#androidx-navigation-runtime-ktx = {module = "androidx.navigation:navigation-runtime-ktx", version.ref = "byRefreshVersion" }
+androidx-navigation-dynamic = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref = "byRefreshVersion" }
+androidx-navigation-testing = { module = "androidx.navigation:navigation-testing", version.ref = "byRefreshVersion" }
+
+
+test-junit = { module = "junit:junit", version.ref = "byRefreshVersion" }
+test-truth = { module = "com.google.truth:truth", version.ref = "byRefreshVersion" }
+test-truth-ext = { module = "androidx.test.ext:truth", version.ref = "byRefreshVersion" }
+
+## Optional -- Robolectric environment
+test-core = { module = "androidx.test:core", version.ref = "byRefreshVersion" }
+#test-core-Ktx = {module = "androidx.test:core-ktx", version.ref = "byRefreshVersion" }
+test-junit-ext = { module = "androidx.test.ext:junit", version.ref = "byRefreshVersion" }
+#junitExtKtx = {module = "android.test.ext:junit-ktx", version.ref = "byRefreshVersion" }
+
+## Espresso
+test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "byRefreshVersion" }
+test-espresso-contrib = { module = "androidx.test.espresso:espresso-contrib", version.ref = "byRefreshVersion" }
+test-espresso-intents = { module = "androidx.test.espresso:espresso-intents", version.ref = "byRefreshVersion" }
+test-espresso-accessibility = { module = "androidx.test.espresso:espresso-accessibility", version.ref = "byRefreshVersion" }
+test-espresso-web = { module = "androidx.test.espresso:espresso-web", version.ref = "byRefreshVersion" }
+test-espresso-idling = { module = "androidx.test.espresso.idling:idling-concurrent", version.ref = "byRefreshVersion" }
+
+test-compose-ui-jUnit = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "byRefreshVersion" }
+testing-compose-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "byRefreshVersion" }
+
+[bundles]
+lifecycle-livedata = ["lifecycle-livedata", "ktx-lifecycle-livedata", "ktx-core"]

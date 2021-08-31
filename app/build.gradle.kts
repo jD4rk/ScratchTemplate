@@ -1,6 +1,7 @@
 plugins {
     id(Plugins.Android.application)
     kotlin(Plugins.Kotlin.android)
+    id(Plugins.SqlDelight.plugin)
 }
 
 android {
@@ -36,26 +37,6 @@ android {
 }
 
 dependencies {
-    implementation(AndroidX.appCompat)
-    implementation(Google.material)
-    implementation(AndroidX.constrainLayout)
-    implementation(AndroidX.coreKtx)
-
-    // Old Navigation dependencies (no Compose)
-    implementation(Navigation.fragment)
-    implementation(Navigation.ui)
-
-    testImplementation(Test.junit)
-
-    androidTestImplementation(Test.espressoCore)
-    androidTestImplementation(Test.junitExt)
+    implementation ("com.google.android.material:compose-theme-adapter:_")
+    implementation (libs.ktx.lifecycle.livedata.core)
 }
-//dependencies {
-//
-//    implementation 'androidx.core:core-ktx:1.6.0'
-//    implementation 'androidx.appcompat:appcompat:1.3.1'
-//    implementation 'com.google.android.material:material:1.4.0'
-//    testImplementation 'junit:junit:4.+'
-//    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-//}
