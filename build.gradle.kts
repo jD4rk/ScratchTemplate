@@ -6,10 +6,11 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath(Build.kotlinGradlePlugin)
-        classpath(Build.androidGradlePlugin)
-//        classpath("com.android.tools.build:gradle:7.0.1")
-//        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30")
+//        classpath("com.android.tools.build:gradle:_")
+//        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:_")
+        classpath(libs.buildscript.android)
+        classpath(libs.buildscript.kotlin)
+        classpath(libs.buildscript.sqlDelight)
     }
 }
 
