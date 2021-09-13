@@ -6,6 +6,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
+//        classpath(Build.kotlinGradlePlugin)
+//        classpath(Build.androidGradlePlugin)
 //        classpath("com.android.tools.build:gradle:_")
 //        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:_")
         classpath(libs.buildscript.android)
